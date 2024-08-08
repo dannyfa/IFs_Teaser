@@ -12,7 +12,7 @@ My name is Daniela de Albuquerque and I am a MD-PhD trainee at Duke University, 
 Electrical and Computer Engineering (ECE) at [John Pearson's lab](https://pearsonlab.github.io/about.html). I am broadly interested 
 in deep generative models (e.g., Variational Auto-Encoders, Diffusions, Flow Matching) and in developing new
 models tailored towards addressing specific needs/problems in neuroscience and biomedical research. To learn a bit more 
-about my other projects, please visit my personal website. 
+about my other projects, please visit my [personal website](https://dannyfa.github.io). 
 
 On the medicine front, I am interested in pursuing Radiology as my future specialty and in applying my PhD training towards
 developing new models capable of facilitating clinical diagnosis and treatment of psychiatric, neurological, and neurodevelopmental
