@@ -77,7 +77,7 @@ distribution \\(\rho_0(\mathbf{x})\\) to samples from a target distribution \\(\
 that attempts to match the <em>conditional</em> flow field, which can be computed in closed form without needing to integrate the corresponding ODE. 
 
 
-As shown in Appendix A.5 of our paper, the pfODEs obtained using our proposed scaling and noising schedules are <em>equivalent</em> to the ODEs obtained by 
+As shown in <strong>Appendix A.5</strong> of our paper, the pfODEs obtained using our proposed scaling and noising schedules are <em>equivalent</em> to the ODEs obtained by 
 using the "Gaussian paths formulation" from [Lipman et al., 2023](https://arxiv.org/pdf/2210.02747) when the latter are generalized to full covariance matrices. 
 As a result, our models are amenable to training using flow-matching techniques, suggesting that faster training and inference schemes may be possible through 
 leveraging connections between flow matching and optimal transport 

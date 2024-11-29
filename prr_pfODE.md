@@ -24,7 +24,7 @@ the initial data in all dimensions with \\( g_i = g_* \\).
 Two additional features of this class of flows are worth noting: 
 First, the final scale ratio of preserved to shrunken dimensions for finite integration times \\(T\\) is governed by the 
 quantity \\(e^{\rho (g_* - g_i)T} \\) in the equation above. For good compression, we want this number to be very large,
-but as shown in Appendix B.2 of our paper, this corresponds to a maximum injected noise of order 
+but as shown in <strong>Appendix A.4</strong> of our paper, this corresponds to a maximum injected noise of order 
 \\( e^{\rho (g_* - g_i)T/2} \\) in the equivalent DBM. That is, the compression one can achieve with inflationary flows 
 is constrained by the range of noise levels over which the score function can be accurately estimated, and this is quite limited 
 in typical models. 

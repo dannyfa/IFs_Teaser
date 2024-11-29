@@ -11,7 +11,7 @@ To construct flows that preserve Participation Ratio (PR) dimensionality, we wri
 \\( \boldsymbol \Sigma(t) = \text{diag}(\boldsymbol\sigma^2(t)) = \mathbf{C}(t) + \boldsymbol\Sigma_0 \\), 
 where \\(\boldsymbol \Sigma_0 \\) is the original data covariance and \\( \mathbf{C}(t) \\) is our time-dependent smoothing kernel. 
 Moreover, we will choose \\( \mathbf{C}(t) \\) to be diagonal in the eigenbasis of \\( \boldsymbol \Sigma_0 \\) and work in that basis, 
-in which case \\( \boldsymbol \Sigma(t) = diag(\boldsymbol\sigma^2(t)) \\) and we have (Appendix A.5 of our paper):
+in which case \\( \boldsymbol \Sigma(t) = diag(\boldsymbol\sigma^2(t)) \\) and we have (<strong>Appendix A.5</strong> of our paper):
 
 $$ dPR = 0 \iff \left( \mathbf{1} - PR(\boldsymbol \sigma^2)\frac{\boldsymbol \sigma^2}{\sum_k \sigma_k^2} \right) \cdot d\boldsymbol\sigma^2 = 0 $$
 
@@ -26,7 +26,7 @@ our use of the term inflationary flows for these choices is inspired by cosmolog
 suppresses local fluctuations in background radiation density ([Guth, 1981](https://journals.aps.org/prd/pdf/10.1103/PhysRevD.23.347)).
 However, as a result of our coordinate rescaling, the effective covariance \\( \boldsymbol{\tilde{\Sigma}} = \mathbf{A} \boldsymbol\Sigma \mathbf{A^\top} = diag(A^2_{0j}) \\) 
 remains constant (so \\( d\boldsymbol{\tilde{\sigma}^2} = \mathbf{0}\\) trivially), and the additional conditions 
-of Appendix A.2 (our paper) are satisfied, such that \\( \mathcal{N}(\mathbf{0}, \boldsymbol{\tilde{\Sigma}}) \\) 
+of <strong>Appendix A.2</strong> (our paper) are satisfied, such that \\( \mathcal{N}(\mathbf{0}, \boldsymbol{\tilde{\Sigma}}) \\) 
 is a stationary solution of the relevant rescaled Fokker-Planck equation. 
 
 

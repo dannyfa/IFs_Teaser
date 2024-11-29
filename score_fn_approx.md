@@ -17,7 +17,7 @@ since both make use of the same score function.
 
 Briefly, in line with previous work on DBMs ([Karras et al., 2022](https://arxiv.org/pdf/2206.00364)), we train neural networks 
 to estimate a de-noised version \\( \mathbf{D}(\mathbf{x}, \mathbf{C}(t)) \\) of a noise-corrupted data sample 
-\\( \mathbf{x} \\)  given noise level \\( \mathbf{C}(t)\\) (cf. Appendix A.4 of our paper for the correspondence between 
+\\( \mathbf{x} \\)  given noise level \\( \mathbf{C}(t)\\) (cf. <strong>Appendix A.4</strong> of our paper for the correspondence between 
 \\( \mathbf{C}(t) \\) and noise). That is, we model \\( \mathbf{D}_\theta(\mathbf{x}, \mathbf{C}(t)) \\) using a neural network 
 and train it by minimizing a standard \\( L_2 \\) de-noising error: 
 
@@ -26,6 +26,6 @@ $$ \mathbb{E}_{\mathbf{y} \sim \text{data}} \mathbb{E}_{\mathbf{n} \sim \mathcal
 De-noised outputs can then be used to compute the desired score term 
 using \\( \nabla_{\mathbf{x}} \log p(\mathbf{x}, \mathbf{C}(t)) = \mathbf{C}^{-1}(t) \cdot \left( \mathbf{D}(\mathbf{x}; \mathbf{C}(t)) - \mathbf{x}\right) \\) ([Song et al., 2021](https://arxiv.org/pdf/2011.13456); [Karras et al., 2022](https://arxiv.org/pdf/2206.00364)). 
 Moreover, as in [Karras et al., 2022](https://arxiv.org/pdf/2206.00364) , we also adopt a series of preconditioning factors 
-aimed at making training with the above \\( L_2 \\)  loss and our noising scheme more amenable to gradient descent techniques (Appendix B.1 of our paper).
+aimed at making training with the above \\( L_2 \\)  loss and our noising scheme more amenable to gradient descent techniques (<strong>Appendix B.1</strong> of our paper).
 
 #### Go to next section [Calibrated Uncertainty Estimates from Inflationary Flows]({% link calibrated_uncertainty_ifs.md %})
