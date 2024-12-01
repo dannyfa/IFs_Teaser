@@ -7,7 +7,7 @@ mathjax: true
 
 ### 7.1 Sources of error when doing inference and generation with Inflationary Flows 
 
-Several previous lines of work ([Gneiting & Raftery, 2007](https://www.tandfonline.com/doi/abs/10.1198/016214506000001437); [Diebold & Mariano, 2002](https://www.tandfonline.com/doi/abs/10.1198/073500102753410444); [Malinin & Gales, 2018](https://proceedings.neurips.cc/paper_files/paper/2018/file/3ea2db50e62ceefceaf70a9d9a56a6f4-Paper.pdf); [Yao et al., 2019](https://arxiv.org/pdf/1906.09686); [Urteaga et al., 2021](https://proceedings.mlr.press/v149/urteaga21a.html))
+Several previous lines of work ([Gneiting & Raftery, 2012](https://www.tandfonline.com/doi/abs/10.1198/016214506000001437); [Diebold & Mariano, 2012](https://www.tandfonline.com/doi/abs/10.1198/073500102753410444); [Malinin & Gales, 2018](https://proceedings.neurips.cc/paper_files/paper/2018/file/3ea2db50e62ceefceaf70a9d9a56a6f4-Paper.pdf); [Yao et al., 2019](https://arxiv.org/pdf/1906.09686); [Urteaga et al., 2021](https://proceedings.mlr.press/v149/urteaga21a.html))
 have focused on assessing how well model-predicted marginals \\( p(\mathbf{x}) \\) match real data 
 (i.e., the <em>predictive</em> calibration case). Though we do compare our models' predictive calibration performance 
 against existing injective flow models (see [Experiments on image benchmark datasets]({% link hd_exps.md %})), here we are primarily focused on 
@@ -48,9 +48,9 @@ components shown in orange, blue, and purple).
 </figure>
 
 
-We then utilized Hamiltonian Monte Carlo (HMC) ([Cobb & Jalaian, 2021](https://proceedings.mlr.press/v161/cobb21a.html); [Chen et al., 2014](http://proceedings.mlr.press/v32/cheni14.html); [Hoffman & Gelman, 2014](https://dl.acm.org/doi/10.5555/2627435.2638586)) 
+We then utilized Hamiltonian Monte Carlo (HMC) ([Cobb & Jalaian, 2021](https://proceedings.mlr.press/v161/cobb21a.html); [Chen et al., 2014](http://proceedings.mlr.press/v32/cheni14.html); [Homan & Gelman, 2014](https://dl.acm.org/doi/10.5555/2627435.2638586)) 
 to obtain samples from the posterior distribution over the weights of the GMM components. 
-Below (see <strong>HMC Posterior Over GMM Weights, panels B, C</strong>), we showcase kernel density estimates (KDEs) constructed from the joint posterior 
+Below (see <strong>HMC Posterior Over GMM Weights, panels A, B</strong>), we showcase kernel density estimates (KDEs) constructed from the joint posterior 
 samples over the mixture distribution weights in the dimension-preserving and dimension-reducing cases. 
 Dashed vertical and horizontal lines indicate posterior means for each component. Reference ground-truth weights were 
 \\( \mathbf{w} = [0.5, 0.25, 0.25] \\). Note that the resulting posterior correctly covers the original 
@@ -68,7 +68,7 @@ suggesting that \\( \mathbf{\hat{s}}(\mathbf{x}, t) \\),
 the score estimate, is well approximated as a scaled colored noise process and the corresponding pfODE as an SDE. In such a case, 
 standard theorems for SDE integration show that while errors due to noise do accumulate, these can be mitigated by a careful choice 
 of integrator and ultimately controlled by reducing step size 
-([Kloeden & Platen, 1992](https://link.springer.com/book/10.1007/978-3-662-12616-5); [Mout et al., 2019](https://arxiv.org/pdf/1907.11331)). 
+([Kloeden & Platen, 1992](https://link.springer.com/book/10.1007/978-3-662-12616-5); [Mou et al., 2019](https://arxiv.org/pdf/1907.11331)). 
 
 
 <figure>

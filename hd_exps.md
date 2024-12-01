@@ -17,11 +17,12 @@ number of dimensions being preserved and the size of this inflation gap.
 
 
 To assess how these two factors affect model performance, we performed two sets of experiments on two benchmark image 
-datasets (CIFAR-10 [Krizhevsky et al., 2009](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf) and 
+datasets (CIFAR-10 [Krizhevsky, 2009](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf) and 
 AFHQv2 [Choi et al., 2020](https://arxiv.org/abs/1912.01865); <strong>Appendix B.4.2</strong>). In the first set of experiments, 
 we fixed \\( T \\), \\( \rho \\), and the inflation gap (\\( \text{IG} = 1.02 \\)) while varying only the number of preserved 
-dimensions \\( d \\) between \\( d=1 \\) (compression to \\( \approx 0.03\% \\)) and \\( d=3072 \\) (no compression) for both datasets
-(see <strong>Tables 1, 2</strong> below - values represent mean \\( \pm 2 \sigma \\) over 3 sets of seeds, each with either 50K samples for FID
+dimensions \\( d \\) between \\( d=1 \\) (compression to \\( \approx 0.03\% \\)) and \\( d=3072 \\) 
+(no compression) for both datasets (see <strong>Tables 1, 2</strong> below - 
+values represent mean \\( \pm 2 \sigma \\) over 3 sets of seeds, each with either 50K samples for FID
 scores, or 10K samples, for round-trip MSE). 
 
 

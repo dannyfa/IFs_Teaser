@@ -20,7 +20,7 @@ mathjax: true
 ### 1.1 Stochastic Differential Equation (Noising) View of DBMs
 
 Standard Diffusion-Based models (DBMs) use a fixed, forward noising process defined 
-by the stochastic differential equation (SDE) ([Sohl-Dickstein et al., 2015](https://arxiv.org/pdf/1503.03585); [Song & Ermon, 2019](https://arxiv.org/pdf/1907.05600)): 
+by the stochastic differential equation (SDE) ([Sohl-Dickstein et al., 2015](https://arxiv.org/pdf/1503.03585); [Song & Ermon, 2020](https://arxiv.org/pdf/1907.05600)): 
 
 $$ d \mathbf{x} = \mathbf{f}(\mathbf{x}, t) dt + \mathbf{G}(\mathbf{x}, t) \cdot d \mathbf{W}, $$
 
@@ -70,7 +70,7 @@ can be used to map points from \\(p_{\mathrm{data}}(\mathbf{x})\\) to a compress
 ### 1.4 Connections to Flow Matching 
 
 This connection between the marginals satisfying the SDEs of diffusion processes and <em>deterministic flows</em> described by an equivalent ODE 
-has also been recently explored in the context of flow matching models ([Lipman et al., 2023](https://arxiv.org/pdf/2210.02747); [Liu et al., 2023](https://arxiv.org/pdf/2209.03003); [Albergo & Vanden-Eijnden, 2023](https://arxiv.org/pdf/2209.15571)).
+has also been recently explored in the context of flow matching models ([Lipman et al., 2023](https://arxiv.org/pdf/2210.02747); [Liu et al., 2022](https://arxiv.org/pdf/2209.03003); [Albergo & Vanden-Eijnden, 2023](https://arxiv.org/pdf/2209.15571)).
 In a nutshell, flow matching models utilize a simple, time-differentiable, "interpolant" function to specify <em>conditional</em> families of distributions 
 that continuously map between specified initial and final densities. That is, the interpolant functions define flows that map samples from a base 
 distribution \\(\rho_0(\mathbf{x})\\) to samples from a target distribution \\(\rho_1(\mathbf{x})\\). Typically, these approaches rely on a simple quadratic objective 
@@ -81,7 +81,7 @@ As shown in <strong>Appendix A.5</strong> of our paper, the pfODEs obtained usin
 using the "Gaussian paths formulation" from [Lipman et al., 2023](https://arxiv.org/pdf/2210.02747) when the latter are generalized to full covariance matrices. 
 As a result, our models are amenable to training using flow-matching techniques, suggesting that faster training and inference schemes may be possible through 
 leveraging connections between flow matching and optimal transport 
-([Tong et al., 2023](https://arxiv.org/pdf/2302.00482); [Pooladian et al., 2023](https://arxiv.org/pdf/2304.14772); [Tong et al., 2024](https://arxiv.org/pdf/2307.03672); [Albergo & Vanden-Eijnden, 2023](https://arxiv.org/pdf/2209.15571)).
+([Tong et al., 2024](https://arxiv.org/pdf/2302.00482); [Pooladian et al., 2023](https://arxiv.org/pdf/2304.14772); [Tong et al., 2024](https://arxiv.org/pdf/2307.03672); [Albergo & Vanden-Eijnden, 2023](https://arxiv.org/pdf/2209.15571)).
 
 
 
