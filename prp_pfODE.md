@@ -11,7 +11,7 @@ To construct flows that preserve Participation Ratio (PR) dimensionality, we wri
 \\( \boldsymbol \Sigma(t) = \text{diag}(\boldsymbol\sigma^2(t)) = \mathbf{C}(t) + \boldsymbol\Sigma_0 \\), 
 where \\(\boldsymbol \Sigma_0 \\) is the original data covariance and \\( \mathbf{C}(t) \\) is our time-dependent smoothing kernel. 
 Moreover, we will choose \\( \mathbf{C}(t) \\) to be diagonal in the eigenbasis of \\( \boldsymbol \Sigma_0 \\) and work in that basis, 
-in which case \\( \boldsymbol \Sigma(t) = diag(\boldsymbol\sigma^2(t)) \\) and we have (<strong>Appendix A.5</strong> of our paper):
+in which case \\( \boldsymbol \Sigma(t) = diag(\boldsymbol\sigma^2(t)) \\) and we have (<strong>Appendix A.6</strong> of our paper):
 
 $$ dPR = 0 \iff \left( \mathbf{1} - PR(\boldsymbol \sigma^2)\frac{\boldsymbol \sigma^2}{\sum_k \sigma_k^2} \right) \cdot d\boldsymbol\sigma^2 = 0 $$
 

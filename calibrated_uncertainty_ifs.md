@@ -36,7 +36,7 @@ only an <em>estimate</em> of the true score.
 ### 7.2 Calibration Experiments on Toy Datasets 
 
 To assess whether integrating noisy estimates of the score could produce errant 
-posterior samples, we conducted a simple MCMC experiment on the 2D circles dataset (<strong>Appendix B.7</strong>). 
+posterior samples, we conducted a simple MCMC experiment on the 2D circles dataset (<strong>Appendix B.6</strong>). 
 Briefly, we drew samples from a 3-component Gaussian Mixture Model (GMM) prior \\( \mathbf{z} \\) and integrated the generative process 
 backward in time to obtain corresponding data space samples \\( \mathbf{x} \\) (see <strong>HMC Calibration Experiment Schematic</strong> below, 
 components shown in orange, blue, and purple).
@@ -59,7 +59,7 @@ appreciably accumulate.
 
 <figure>
     <figcaption><strong><center><font size="+2.5">HMC Posterior Over GMM Weights</font></center></strong></figcaption>
-    <img src="https://sites.duke.edu/ifsprojectassets/files/2024/11/MCMC_plots_corrected_pannels-scaled.jpg" alt="schematic">
+    <img src="https://sites.duke.edu/ifsprojectassets/files/2024/12/MCMC_plots_FINAL_12262024-scaled.jpg" alt="schematic">
 </figure>
 
 This is because, empirically, score estimates do not appear to be 
